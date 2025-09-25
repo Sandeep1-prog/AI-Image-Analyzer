@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Image Analyzer</h1>
+            <p>Upload an image and get detailed AI-powered analysis</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📸</div>
+                        <h3>Drop your image here</h3>
+                        <p>or <span class="browse-text">browse files</span></p>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-preview" id="imagePreview" style="display: none;">
+                <img id="previewImg" src="" alt="Preview">
+                <div class="image-info">
+                    <span id="fileName"></span>
+                    <button id="removeImage" class="remove-btn">✕</button>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="analyzeBtn" class="analyze-btn" disabled>
+                    <span class="btn-text">Analyze Image</span>
+                    <div class="loading-spinner" style="display: none;"></div>
+                </button>
+            </div>
+
+            <div class="results" id="results" style="display: none;">
+                <h2>📝 Analysis Results</h2>
+                <div class="analysis-content" id="analysisContent"></div>
+            </div>
+
+            <div class="error" id="error" style="display: none;">
+                <h3>❌ Error</h3>
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
