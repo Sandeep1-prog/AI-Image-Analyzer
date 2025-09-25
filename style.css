@@ -1,44 +1,44 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
   text-align: center;
-  padding: 30px;
+  background: #f7f7f7;
+  padding: 20px;
 }
 
-h1 {
-  color: #333;
-}
+h1 { color: #333; }
 
-form {
-  margin: 20px auto;
-}
+form { margin: 20px 0; }
 
 button {
-  margin-top: 10px;
-  padding: 10px 20px;
   background: #4cafef;
-  border: none;
-  border-radius: 6px;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #369fdd;
+#gallery img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
+#gallery img:hover { transform: scale(1.05); }
 
 #preview img {
   margin-top: 20px;
   max-width: 400px;
   border-radius: 8px;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
 }
 
 #result {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px;
   background: white;
   border-radius: 6px;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  white-space: pre-wrap;
 }
